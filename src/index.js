@@ -5,7 +5,7 @@ import { Routes } from './routes';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter >
         <Routes />
     </BrowserRouter>
 , document.getElementById('root'));
