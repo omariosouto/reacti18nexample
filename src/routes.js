@@ -8,7 +8,7 @@ import { Post } from './pages/Post';
 
 
 const MultiLanguageRoute = (props) => {
-    const defaultLanguage = "/pt"
+    const defaultLanguage = "pt"
     const hasLang = props.computedMatch.params.lang
     const is404Page = props.path
     const isBasePathWithoutLang = props.path === "/"
