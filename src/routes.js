@@ -7,8 +7,20 @@ import { Posts } from './pages/Posts'
 import { Post } from './pages/Post';
 
 
+const LANGUAGES = {
+    pt: {
+        urlLang: 'pt',
+        code: 'pt-BR'
+    },
+    en: {
+        urlLang: 'en',
+        code: 'en-US'
+    }
+}
+
+
 const MultiLanguageRoute = (props) => {
-    const defaultLanguage = "pt"
+    const defaultLanguage = LANGUAGES.pt.urlLang
     const hasLang = props.computedMatch.params.lang
     const is404Page = props.path
     const isBasePathWithoutLang = props.path === "/"
